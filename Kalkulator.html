@@ -1,0 +1,75 @@
+h<html>
+    <head>
+        <title>UAS PTI Kalkulator</title>
+    </head>
+    <body>
+            <div align="center">
+            <h1>Kalkulator </h1>
+            <form name="calcu" action="#">
+            <table>
+            <tr>
+            <td>Masukan Angka 1</td>
+            <td>:</td>
+            <td><input type="text" name="angka1"></td>
+            </tr>
+            <tr>
+            <td>Masukan Angka 2</td>
+            <td>:</td>
+            <td><input type="text" name="angka2"></td>
+            </tr>
+            <tr>
+            <td>Operator</td>
+            <td>:</td>
+            <td>
+            <select name="opt">
+            <option value="tambah">+</option>
+            <option value="kurang">-</option>
+            <option value="bagi">:</option>
+            <option value="kali">x</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+            <td>Hasil</td>
+            <td>:</td>
+            <td><input type="text" name="Submit" disabled="true" /></td>
+            </tr>
+            <tr>
+            <td colspan="3"><input type="button" value="Submit" onClick="hitung()" style="width: 100%;"/></td>
+            </tr>
+            </table>
+        </form>
+    </div>    
+    </body>
+    <script language="JavaScript" type="text/javascript">
+
+        <!--
+        
+        function hitung(){
+        
+        var myForm = document.calcu;
+        var angka1=eval(myForm.angka1.value);
+        var angka2=eval(myForm.angka2.value);
+        var pil= myForm.opt.value;
+        if (pil == "tambah") {
+        var jadi = angka1 + angka2;
+         }else if (pil == "kurang") 
+         {
+        var jadi = angka1 - angka2;
+         } else if (pil == "kali") 
+         {
+        var jadi = angka1 * angka2;
+         } else if (pil == "bagi") 
+         {
+        var jadi = angka1 / angka2;
+         }
+         myForm.Submit.value = jadi;
+         myForm.x.value = "";
+         myForm.y.value = "";
+        }
+        
+        
+        //-->
+        
+        </script>
+</html>tml
